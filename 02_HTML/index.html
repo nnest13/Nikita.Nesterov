@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>02. HTML. Таблицы</h1>
+<h2>Домашнее задание - базовое</h2>
+<h3>Создайте таблицу с прогнозом погоды как показано на рисунке.</h3>
+<ul>
+    <li>Знак градуса необходимо реализовать как минимум двумя способами</li>
+    <li>Таблицу разместить по центру страницы</li>
+</ul>
+    <table border="1" width="25%">
+        <caption><i>Прогноз погоды</i></caption>
+        <tr>
+            <th>Город</th><th>Утро</th><th>День</th><th>Вечер</th><th>Ночь</th>
+        </tr>
+        <tr>
+            <th>Минск</th><td>-5&deg;</td><td>+5<sup>o</sup></td><td rowspan="2">+2&deg;</td><td>-10&deg;</td>
+        </tr>
+        <tr>
+            <th>Брест</th><td>0&deg;</td><td>+9&deg;</td><td>-4&deg;</td>
+        </tr>
+    </table>
+<hr>
+<h2>Домашнее задание - дополнительное</h2>
+<h3>Создайте фрагмент календаря месяца вашего дня рождения текущего года согласно образцу показанному ниже.</h3>
+<ul>
+    <li>Таблицу разместить по центру страницы</li>
+    <li>Столбцы с цифровыми значениями должны иметь одинаковую ширину</li>
+</ul>
+<table border="1" width="10%">
+    <caption>Месяц моего дня рождения</caption>
+    <tr>
+        <th colspan="6">Январь</th>
+    </tr>
+    <tr>
+        <th>Пн</th><td width="23">&nbsp;</td><td width="23">7</td><td width="23">14</td><td width="23">21</td><td width="23">28</td>
+    </tr>
+    <tr>
+        <th>Вт</th><td>1</td><td>8</td><td>15</td><td>22</td><td>29</td>
+    </tr>
+    <tr>
+        <th>Ср</th><td>2</td><td>9</td><td>16</td><td>23</td><td>30</td>
+    </tr>
+    <tr>
+        <th>Чт</th><td>3</td><td>10</td><td>17</td><td>24</td><td>31</td>
+    </tr>
+    <tr>
+        <th>Пт</th><td>4</td><td>11</td><td>18</td><td>25</td><td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th>Сб</th><td>5</td><td>12</td><td>19</td><td>26</td><td>&nbsp;</td>
+    </tr>
+    <tr>
+        <th>Вс</th><td>6</td><td>13</td><td>20</td><td>27</td><td>&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>
