@@ -7,6 +7,115 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 align="center">Заполните анкету</h1>
+    <form name="1" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+        <fieldset>
+            <legend>Личные данные</legend>
+            <input type="text" name="SecondName" placeholder="Фамилия" autofocus  pattern="[а-яА-ЯЁё]{1,25}" required><br>
+            <input type="text" name="FirstName" placeholder="Имя" pattern="[а-яА-ЯЁё]{1,20}" required><br>
+            <input type="text" name="ThirdName" placeholder="Отчество" pattern="[а-яА-ЯЁё]{1,24}" required><br>
+            <input type="submit">
+            <fieldset>
+                <legend>Паспортные данные</legend>
+                    <input type="text" name="Seria"  pattern="[A-Z]{2,2}" size="2" required>
+                    <input type="text" name="Nomer"  pattern="[0-9]{7,7}" size="7" required>
+            </fieldset>
+            <fieldset>
+                <legend>Дата Рождения</legend>
+                    <input type="text" name="GodRozhdenia" required pattern="[0-9]{4,4}" size="4"> Год рождения<br>
+                    <select name="MesjacRozhdenia">
+                        <option value="January">Январь</option>
+                        <option value="February">Февраль</option>
+                        <option value="March">Март</option>
+                        <option value="April">Апрель</option>
+                        <option value="May">Май</option>
+                        <option value="June">Июнь</option>
+                        <option value="July">Июль</option>
+                        <option value="August">Август</option>
+                        <option value="September">Сентябрь</option>
+                        <option value="October">Октябрь</option>
+                        <option value="November">Ноябрь</option>
+                        <option value="December">Декабрь</option>
+                    </select><br>
+                    <input type="number" name="Den'Rozhdenia" min="1" max="31">
+            </fieldset>
+            <select name="Grazhdanstvo" required>
+                <option value="RB">RB</option>
+                <option value="RF">RF</option>
+                <option value="UA">UA</option>
+            </select><br>
+            Адрес<br>
+            <textarea name="adress"></textarea>
+        </fieldset>
+    </form>
+    <form name="2" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank">
+        <fieldset>
+            <legend>Интересы</legend>
+                <fieldset>
+                    <legend>Хобби</legend>
+                        <label>
+                            <input type="checkbox" name="Hobbi1" value="Рыбалка">Рыбалка
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="Hobbi2" value="Астрономия">Астрономия
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="Hobbi3" value="Дайвинг">Дайвинг
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="Hobbi4" value="Марки">Марки
+                        </label>
+                        <input type="submit"> 
+                </fieldset>
+                <fieldset>
+                    <legend>Домашние животные</legend>
+                    <select multiple name="Domashnie_Zhivotnue[]" size="9">
+                        <optgroup label="Попугаи"></optgroup>
+                            <option value="Popugai1">Волнистый</option>
+                            <option value="Popugai2">Ара</option>
+                            <option value="Popugai3">Неразлучник</option>
+                        </optgroup>
+                        <optgroup label="Рыбы"></optgroup>
+                            <option value="Ruba1">Караси</option>
+                            <option value="Ruba2">Окуни</option>
+                            <option value="Ruba3">Осётр</option>
+                        </optgroup>
+                        <optgroup label="Птицы"></optgroup>
+                            <option value="Ptica1">Стая ворон</option>
+                            <option value="Ptica2">Аист</option>
+                            <option value="Ptica3">Археоптерикс</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="Ok">
+                </fieldset>
+        </fieldset>
+    </form>
+    <form name="3" action="http://fe.it-academy.by/TestForm.php" method="get" target="_blank" autocomplete="off">
+        <fieldset>
+            <legend>Данные для входа и восстановления пароля</legend>
+                <input type="text" name="login" pattern="[A-Za-z]{5,20}" required> Login<br>
+                <input type="password" name="password" pattern="[A-Za-z]{10,20}" required> Password
+        </fieldset>
+        <fieldset>
+            <legend>Координаты</legend>
+                <input type="email" name="email" placeholder="gmail@gmail.com" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"> e-mail<br>
+                <input type="url" placeholder="http://gmail.com"name="url"> url
+        </fieldset>
+        <fieldset>
+            <legend>Цифры</legend>
+                <input type="number" name="number" min="-2.5" max="2.5" step="0.1"><br>
+                <input type="range" name="range" min="1" max="10" step="1">
+                
+        </fieldset>
+        <fieldset>
+            <legend>Кнопки управления</legend>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Сбросить"><br>
+                <button disabled><img src="icons8-почта-48.png"></button>
+        </fieldset>
+    </form>
 </body>
 </html>
